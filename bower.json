@@ -1,0 +1,29 @@
+{
+  "name": "react-roubles",
+  "version": "0.0.0",
+  "description": "react-roubles",
+  "main": "dist/react-roubles.min.js",
+  "homepage": "https://github.com/KasperGreen/react-roubles",
+  "authors": [
+    "KasperGreen"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
