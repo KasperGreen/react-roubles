@@ -1,0 +1,10 @@
+﻿# Модули Node, логи npm
+/node_modules
+/npm-debug.log
+
+# Спецфайлы операционных систем
+Thumbs.db
+Desktop.ini
+.DS_Store*
+ehthumbs.db
+Icon?

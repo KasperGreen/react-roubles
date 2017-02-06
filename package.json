@@ -1,0 +1,29 @@
+{
+  "name": "react-roubles",
+  "version": "1.0.0",
+  "description": "Formatting price in Russian Federation roubles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KasperGreen/react-roubles.git"
+  },
+  "keywords": [
+    "amount",
+    "number",
+    "price",
+    "format",
+    "numbers"
+  ],
+  "author": "KasperGreen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KasperGreen/react-roubles/issues"
+  },
+  "homepage": "https://github.com/KasperGreen/react-roubles#readme",
+  "dependencies": {
+    "underscore.string": "^3.3.4"
+  }
+}
