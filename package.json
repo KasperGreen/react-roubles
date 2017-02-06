@@ -1,6 +1,6 @@
 {
   "name": "react-roubles",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "react-roubles",
   "main": "lib/ReactRoubles.js",
   "author": "KasperGreen",
@@ -27,17 +27,17 @@
     "react-dom": "^0.14.0"
   },
   "peerDependencies": {
-    "react": "^0.14.0"
+    "react": ">=0.14.0"
   },
   "browserify-shim": {
     "react": "global:React"
   },
   "scripts": {
-    "build": "gulp clean && NODE_ENV=production gulp build",
+    "build": "gulp clean && set NODE_ENV=production gulp build",
     "examples": "gulp dev:server",
     "lint": "eslint ./; true",
-    "publish:site": "NODE_ENV=production gulp publish:examples",
-    "release": "NODE_ENV=production gulp release",
+    "publish:site": "set NODE_ENV=production gulp publish:examples",
+    "release": "set NODE_ENV=production gulp release",
     "start": "gulp dev",
     "test": "echo \"no tests yet\" && exit 0",
     "watch": "gulp watch:lib"
