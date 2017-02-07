@@ -1,53 +1,41 @@
 {
   "name": "react-roubles",
-  "version": "1.0.3",
-  "description": "react-roubles",
-  "main": "lib/ReactRoubles.js",
+  "version": "1.0.12",
+  "description": "work in progress. do not install this",
+  "main": "lib/index.js",
   "author": "KasperGreen",
   "license": "MIT",
-  "homepage": "https://github.com/KasperGreen/react-roubles",
+  "scripts": {
+    "test": "run test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "firenpm": "1.2.0",
+    "firenpm.web": "1.2.0"
+  },
+  "babel": {
+    "presets": [
+      "firenpm/babel-preset-es2015",
+      "firenpm/babel-preset-react",
+      "firenpm/babel-preset-stage-2"
+    ]
+  },
+  "runjs": {
+    "babel-register": "./node_modules/firenpm/babel-register"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/firenpm/eslint-config-standard.js",
+      "./node_modules/firenpm/eslint-config-standard-react.js"
+    ],
+    "parser": "./node_modules/firenpm/babel-eslint"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KasperGreen/react-roubles.git"
+    "url": "git+https://github.com/KasperGreen/react-roubles.git"
   },
   "bugs": {
     "url": "https://github.com/KasperGreen/react-roubles/issues"
   },
-  "dependencies": {
-    "classnames": "^2.1.2",
-    "underscore.string": "^3.3.4"
-  },
-  "devDependencies": {
-    "babel-eslint": "^4.1.3",
-    "eslint": "^1.6.0",
-    "eslint-plugin-react": "^3.5.1",
-    "gulp": "^3.9.0",
-    "react": "^0.14.0",
-    "react-component-gulp-tasks": "^0.7.6",
-    "react-dom": "^0.14.0"
-  },
-  "peerDependencies": {
-    "react": ">=0.14.0"
-  },
-  "browserify-shim": {
-    "react": "global:React"
-  },
-  "scripts": {
-    "build": "gulp clean && set NODE_ENV=production gulp build",
-    "examples": "gulp dev:server",
-    "lint": "eslint ./; true",
-    "publish:site": "set NODE_ENV=production gulp publish:examples",
-    "release": "set NODE_ENV=production gulp release",
-    "start": "gulp dev",
-    "test": "echo \"no tests yet\" && exit 0",
-    "watch": "gulp watch:lib"
-  },
-  "keywords": [
-    "react",
-    "react-component",
-    "amount",
-    "number",
-    "price",
-    "format",
-    "numbers"  ]
+  "homepage": "https://github.com/KasperGreen/react-roubles#readme"
 }
