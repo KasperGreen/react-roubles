@@ -8,7 +8,10 @@
   "scripts": {
     "test": "run test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
   "devDependencies": {
     "firenpm": "1.2.0",
     "firenpm.web": "1.2.0"

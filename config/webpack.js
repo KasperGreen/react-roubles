@@ -1,7 +1,7 @@
-const path = require('path')
+const path = require('path');
 
 function firenpmWeb (name) {
-  return path.resolve('./node_modules/firenpm.web/' + name + '.js')
+  return path.resolve('./node_modules/firenpm.web/' + name + '.js');
 }
 module.exports = {
   entry: './demo/index.js',
@@ -23,4 +23,4 @@ module.exports = {
       { test: /\.(png|jpg)$/, loader: firenpmWeb('url-loader') }
     ]
   }
-}
+};
