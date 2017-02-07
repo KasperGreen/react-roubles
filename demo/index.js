@@ -1,6 +1,11 @@
-import { sayHello } from '../src';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MyComponent from '../src';
 import '../style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  sayHello();
+	ReactDOM.render(
+	<MyComponent />,
+		document.querySelector('#react-app')
+	);
 });
