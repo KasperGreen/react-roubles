@@ -1,5 +1,9 @@
-export function sayHello () {
-  let p = document.createElement('p');
-  p.textContent = 'Hello. Seems that everything is working!';
-  document.body.appendChild(p);
+import React from 'react'
+
+const MyComponent = () => {
+	return (
+        <div>Hello</div>
+	)
 }
+
+export default MyComponent
