@@ -1,44 +1,30 @@
 {
   "name": "react-roubles",
-  "version": "1.0.12",
-  "description": "work in progress. do not install this",
-  "main": "lib/index.js",
-  "author": "KasperGreen",
-  "license": "MIT",
+  "version": "1.0.14",
+  "description": "fck",
+  "main": "index.js",
   "scripts": {
-    "test": "run test"
-  },
-  "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
-  "devDependencies": {
-    "firenpm": "1.2.0",
-    "firenpm.web": "1.2.0"
-  },
-  "babel": {
-    "presets": [
-      "firenpm/babel-preset-es2015",
-      "firenpm/babel-preset-react",
-      "firenpm/babel-preset-stage-2"
-    ]
-  },
-  "runjs": {
-    "babel-register": "./node_modules/firenpm/babel-register"
-  },
-  "eslintConfig": {
-    "extends": [
-      "./node_modules/firenpm/eslint-config-standard.js",
-      "./node_modules/firenpm/eslint-config-standard-react.js"
-    ],
-    "parser": "./node_modules/firenpm/babel-eslint"
+    "build": "./node_modules/.bin/babel helloworld.js -o index.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KasperGreen/react-roubles.git"
   },
+  "author": "KasperGreen",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/KasperGreen/react-roubles/issues"
   },
-  "homepage": "https://github.com/KasperGreen/react-roubles#readme"
+  "homepage": "https://github.com/KasperGreen/react-roubles#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0"
+  }
 }
