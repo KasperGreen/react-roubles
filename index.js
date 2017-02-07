@@ -10,6 +10,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _underscore = require('underscore.string');
+
+var _underscore2 = _interopRequireDefault(_underscore);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28,12 +32,18 @@ var ReactHelloWorld = function (_React$Component) {
 	}
 
 	_createClass(ReactHelloWorld, [{
+		key: 'moneyFormat',
+		value: function moneyFormat(num) {
+			return _underscore2.default.numberFormat(num, 0, null, ' ') + ' ₽';
+		}
+	}, {
 		key: 'render',
 		value: function render() {
+			var roubles = parseFloat(this.props.children);
 			return _react2.default.createElement(
-				'div',
+				'span',
 				null,
-				' Hello world!! '
+				this.moneyFormat(roubles)
 			);
 		}
 	}]);
