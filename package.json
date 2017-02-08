@@ -1,6 +1,6 @@
 {
   "name": "react-roubles",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Russian Fediration rouble format",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "babel-preset-stage-0": "^6.22.0"
   },
   "peerDependencies": {
+    "underscore.string": "^3.3.4",
     "react": "^0.14.0 || ^15.0.1",
     "react-dom": "^0.14.0 || ^15.0.1"
   }
