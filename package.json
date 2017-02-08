@@ -1,6 +1,6 @@
 {
   "name": "react-roubles",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Russian Fediration rouble format",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/KasperGreen/react-roubles#readme",
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react": ">=14",
+    "react-dom": "^>=14",
     "underscore.string": "^3.3.4"
   },
   "devDependencies": {
