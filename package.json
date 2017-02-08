@@ -18,14 +18,18 @@
   },
   "homepage": "https://github.com/KasperGreen/react-roubles#readme",
   "dependencies": {
-    "react": ">=14",
-    "react-dom": "^>=14",
     "underscore.string": "^3.3.4"
   },
   "devDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "babel-cli": "^6.22.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.1",
+    "react-dom": "^0.14.0 || ^15.0.1"
   }
 }
